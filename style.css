@@ -3,7 +3,7 @@ html, body{
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     height: 100%;
 }
@@ -17,7 +17,11 @@ a{
     color: #f9faf8;
 }
 
-h1 {
+h1, h3 {
+    margin-block: 0px;
+}
+
+p{
     margin-block: 0px;
 }
 
@@ -66,10 +70,9 @@ h1 {
     width: 900px;
     justify-content: center;
     margin: auto;
-    margin-top: auto;
     padding-bottom: 150px;
     gap: 100px;
-    height: 100%;
+    min-height: 0;
 }
 
 .hero{
@@ -93,7 +96,11 @@ h1 {
     font-size: 18px;
 }
 
-.signup {
+.heroText{
+    padding: 10px 0 20px 0;
+}
+
+.signup, .white-signup {
     background-color: #3882f6;
     border-radius: 5px;
     border: 0px;
@@ -103,21 +110,24 @@ h1 {
     font-size: 16px;
 }
 
-.signup:hover{
+.signup:hover, .white-signup:hover{
     background-color: #5695fa;
 }
 
 /* Cards */
 
 .cardBox{
+    display: flex;
+    justify-content: center;
 }
 
 .cardBoxContent{
-    width: 900px;
+    width: 800px;
     display:flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 100px 0;
 }
 
 .cards{
@@ -140,11 +150,66 @@ h1 {
     text-align: center;
 }
 
+.cardText{
+    padding-top: 20px;
+}
 
+/* Quote */
+
+.quoteBox{
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.quoteBoxContent{
+    font-size: 24px;
+    font-style: italic;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote{
+    align-self: flex-start;
+}
+
+.author{
+    align-self: flex-end;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Call to action */
+
+.cta{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.ctaContent{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    color: #f9faf8;
+    padding: 40px 80px;
+    align-items: center;
+}
+
+.white-signup{
+    border: 1px solid white;
+}
 
 
 /* Footer */
 
 .footer{
     margin-top: auto;
+    background-color: #1f2937;
+    color: white;
+    padding: 50px 0;
 }
