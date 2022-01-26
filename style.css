@@ -21,30 +21,55 @@ h1 {
     margin-block: 0px;
 }
 
-.hero img{
-    width: 350px;
-    height: 150px;
-    background: grey;
-}
+/* Container */
 
-.header, .cardBox, .quoteBox, .cta, .footer{
+.headerContent, .cardBoxContent, .quoteBoxContent, .ctaContent, .footerContent{
     display: flex;
     justify-content: center;
+    flex-direction: row;
+}
+
+/* Header */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero img{
+    width: 350px;
+    height: 100%;
+    background: grey;
 }
 
 .header{
     background-color: #1f2937;
-    padding-bottom: 50px;
     color: #f9faf8;
+    justify-content: center;
 }
 
 .headerContent{
-    width: 900px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 50px;
-    padding: 10px;
+    width: 900px;
+    justify-content: center;
+    margin: auto;
+    margin-top: auto;
+    padding-bottom: 150px;
+    gap: 100px;
+    height: 100%;
 }
 
 .hero{
@@ -60,34 +85,65 @@ h1 {
     justify-content: flex-start;
 }
 
+.heroTitle{
+    font-size: 48px;
+}
+
+.heroText, .links{
+    font-size: 18px;
+}
+
 .signup {
     background-color: #3882f6;
     border-radius: 5px;
     border: 0px;
-    padding: 5px 20px;
+    padding: 6px 25px;
     color: #f9faf8;
     font-weight: 600;
+    font-size: 16px;
 }
 
 .signup:hover{
     background-color: #5695fa;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-between;
+/* Cards */
+
+.cardBox{
+}
+
+.cardBoxContent{
+    width: 900px;
+    display:flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.logo{
-    font-weight: 600;
-}
-
-.links {
-    display: flex;
-    justify-content: space-between;
     gap: 20px;
 }
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rectangle{
+    width: 100px;
+    height: 100px;
+    border: solid #3882f6 2px;
+    border-radius: 10px;
+}
+
+.card{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+/* Footer */
 
 .footer{
     margin-top: auto;
